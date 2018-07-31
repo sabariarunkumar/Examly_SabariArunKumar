@@ -1,0 +1,79 @@
+<!-- <p>
+  finalbill works!
+</p> -->
+<div class="hd">
+<h1><b>BILL HISTORY</b></h1>
+</div>
+
+<p><b>Bill Id:2574</b></p>
+
+
+
+<table border="1">
+    <tr><th>PRODUCT ID</th><th>PRODUCT NAME</th><th>PRICE</th><th>GST</th><th>QUANTITY</th><th>PRODUCT PRICE</th></tr>
+    <tr *ngFor="let i of f_ans;let k=index;">
+            <td *ngIf="f_ans[0].b_id==f_ans[k].b_id">{{f_ans[k].product_code}}</td>
+            <td *ngIf="f_ans[0].b_id==f_ans[k].b_id">{{f_ans[k].product_name}}</td>
+             <td *ngIf="f_ans[0].b_id==f_ans[k].b_id">{{f_ans[k].price}}</td>
+            <td *ngIf="f_ans[0].b_id==f_ans[k].b_id">{{f_ans[k].gst}}</td>
+            <td *ngIf="f_ans[0].b_id==f_ans[k].b_id">{{f_ans[k].quantity}}</td>
+            <td *ngIf="f_ans[0].b_id==f_ans[k].b_id">{{f_ans[k].product_price}}</td>
+    </tr>
+<tr>
+    
+</tr>
+</table>
+<div *ngFor="let i of f_ans;let m=index">
+ <div *ngIf="f_ans[m].b_id!=f_ans[m+1].b_id">
+<p><b>Bill Id:</b>{{f_ans[m+1].b_id}}</p>
+
+
+
+<table border="1">
+    <tr><th>PRODUCT ID</th><th>PRODUCT NAME</th><th>PRICE</th><th>GST</th><th>QUANTITY</th><th>PRODUCT PRICE</th></tr>
+    <tr *ngFor="let i of f_ans;let k=index">
+            <td *ngIf="f_ans[m+1].b_id==f_ans[k].b_id">{{f_ans[k].product_code}}</td>
+            <td *ngIf="f_ans[m+1].b_id==f_ans[k].b_id">{{f_ans[k].product_name}}</td>
+             <td *ngIf="f_ans[m+1].b_id==f_ans[k].b_id">{{f_ans[k].price}}</td>
+            <td *ngIf="f_ans[m+1].b_id==f_ans[k].b_id">{{f_ans[k].gst}}</td>
+            <td *ngIf="f_ans[m+1].b_id==f_ans[k].b_id">{{f_ans[k].quantity}}</td>
+            <td *ngIf="f_ans[m+1].b_id==f_ans[k].b_id">{{f_ans[k].product_price}}</td>
+    </tr>
+
+</table> 
+</div>
+
+</div>
+
+<!-- <div *ngFor="let i of f_ans;let m=index"> -->
+
+<!-- <p><b>Bill Id:</b>{{f_ans[4].b_id}}</p>
+
+
+
+<table border="1">
+    <tr><th>PRODUCT ID</th><th>PRODUCT NAME</th><th>PRICE</th><th>GST</th><th>QUANTITY</th><th>PRODUCT PRICE</th></tr>
+    <tr *ngFor="let i of f_ans;let k=index">
+            <td *ngIf="f_ans[1].b_id==f_ans[k].b_id">{{f_ans[k].product_code}}</td>
+            <td *ngIf="f_ans[1].b_id==f_ans[k].b_id">{{f_ans[k].product_name}}</td>
+             <td *ngIf="f_ans[1].b_id==f_ans[k].b_id">{{f_ans[k].price}}</td>
+            <td *ngIf="f_ans[1].b_id==f_ans[k].b_id">{{f_ans[k].gst}}</td>
+            <td *ngIf="f_ans[1].b_id==f_ans[k].b_id">{{f_ans[k].quantity}}</td>
+            <td *ngIf="f_ans[1].b_id==f_ans[k].b_id">{{f_ans[k].product_price}}</td>
+    </tr>
+
+</table>  -->
+
+<!-- <table border="1">
+  <tr><th>PRODUCT ID</th><th>PRODUCT NAME</th><th>PRICE</th><th>GST</th><th>QUANTITY</th><th>PRODUCT PRICE</th></tr> -->
+  <!-- <tr *ngFor = "let data of da"> -->
+      <!-- <div *ngFor="let i of da">
+          <span *ngFor="let j of i">
+              <p{{j}}></p>
+
+          </span>
+      </div> -->
+  <!-- <tr><td>{{data[0][0].product_code}}</td><td>{{data[0][0].product_name}}</td><td>{{data[0][0].price}}</td><td>{{data[0][0].gst}}</td><td>{{data[0][0].quantity}}</td><td>{{data[0][0].product_price}}</td></tr> -->
+  <!-- <tr><td></td></tr> 
+  <tr><th>{{mko[i+1]}}</th></tr> -->
+<!-- </table> -->
